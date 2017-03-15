@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "0d5fc13cb87b8ea8c2885ac28a5386da"
+build_time: [542884009, 91338000]
+inputs:
+  "/Users/KS/Desktop/AqTK-Swift/AqTK-Swift/ViewController.swift": [542805408, 0]
+  "/Users/KS/Desktop/AqTK-Swift/AqTK-Swift/AppDelegate.swift": [542884009, 0]

@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4850B7EE1E7808A0006442D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850B7ED1E7808A0006442D7 /* AppDelegate.swift */; };
+		4850B7F01E7808A0006442D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850B7EF1E7808A0006442D7 /* ViewController.swift */; };
+		4850B7F21E7808A0006442D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4850B7F11E7808A0006442D7 /* Assets.xcassets */; };
+		4850B7F51E7808A0006442D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4850B7F31E7808A0006442D7 /* Main.storyboard */; };
+		48EA488A1E780FF900699C47 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48891E780FF900699C47 /* AppKit.framework */; };
+		48EA48951E781D5100699C47 /* AquesTalk2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48941E781D5100699C47 /* AquesTalk2.framework */; };
+		48EA48961E781D5100699C47 /* AquesTalk2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48941E781D5100699C47 /* AquesTalk2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48EA48991E78288600699C47 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48981E78288600699C47 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48EA488E1E78100400699C47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48EA48961E781D5100699C47 /* AquesTalk2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4850B7EA1E7808A0006442D7 /* AqTK-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AqTK-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4850B7ED1E7808A0006442D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4850B7EF1E7808A0006442D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4850B7F11E7808A0006442D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4850B7F41E7808A0006442D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4850B7F61E7808A0006442D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48EA48891E780FF900699C47 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		48EA48941E781D5100699C47 /* AquesTalk2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AquesTalk2.framework; sourceTree = "<group>"; };
+		48EA48971E781FB500699C47 /* AqTK-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AqTK-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		48EA48981E78288600699C47 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4850B7E71E7808A0006442D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48EA48991E78288600699C47 /* AVFoundation.framework in Frameworks */,
+				48EA488A1E780FF900699C47 /* AppKit.framework in Frameworks */,
+				48EA48951E781D5100699C47 /* AquesTalk2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4850B7E11E78089F006442D7 = {
+			isa = PBXGroup;
+			children = (
+				4850B7EC1E7808A0006442D7 /* AqTK-Swift */,
+				4850B7EB1E7808A0006442D7 /* Products */,
+				4850B8011E780AA9006442D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4850B7EB1E7808A0006442D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4850B7EA1E7808A0006442D7 /* AqTK-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4850B7EC1E7808A0006442D7 /* AqTK-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4850B7ED1E7808A0006442D7 /* AppDelegate.swift */,
+				4850B7EF1E7808A0006442D7 /* ViewController.swift */,
+				4850B7F11E7808A0006442D7 /* Assets.xcassets */,
+				4850B7F31E7808A0006442D7 /* Main.storyboard */,
+				4850B7F61E7808A0006442D7 /* Info.plist */,
+				48EA48971E781FB500699C47 /* AqTK-Swift-Bridging-Header.h */,
+			);
+			path = "AqTK-Swift";
+			sourceTree = "<group>";
+		};
+		4850B8011E780AA9006442D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48EA48981E78288600699C47 /* AVFoundation.framework */,
+				48EA48941E781D5100699C47 /* AquesTalk2.framework */,
+				48EA48891E780FF900699C47 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4850B7E91E7808A0006442D7 /* AqTK-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4850B7F91E7808A0006442D7 /* Build configuration list for PBXNativeTarget "AqTK-Swift" */;
+			buildPhases = (
+				4850B7E61E7808A0006442D7 /* Sources */,
+				4850B7E71E7808A0006442D7 /* Frameworks */,
+				4850B7E81E7808A0006442D7 /* Resources */,
+				48EA488E1E78100400699C47 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AqTK-Swift";
+			productName = "AqTK-Swift";
+			productReference = 4850B7EA1E7808A0006442D7 /* AqTK-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4850B7E21E78089F006442D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = SK;
+				TargetAttributes = {
+					4850B7E91E7808A0006442D7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4850B7E51E78089F006442D7 /* Build configuration list for PBXProject "AqTK-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4850B7E11E78089F006442D7;
+			productRefGroup = 4850B7EB1E7808A0006442D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4850B7E91E7808A0006442D7 /* AqTK-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4850B7E81E7808A0006442D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4850B7F21E7808A0006442D7 /* Assets.xcassets in Resources */,
+				4850B7F51E7808A0006442D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4850B7E61E7808A0006442D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4850B7F01E7808A0006442D7 /* ViewController.swift in Sources */,
+				4850B7EE1E7808A0006442D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4850B7F31E7808A0006442D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4850B7F41E7808A0006442D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4850B7F71E7808A0006442D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4850B7F81E7808A0006442D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		4850B7FA1E7808A0006442D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Frameworks/AquesTalk2.framework/headers";
+				INFOPLIST_FILE = "AqTK-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SK.AqTK-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/AquesTalk2.framework/";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4850B7FB1E7808A0006442D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "AqTK-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SK.AqTK-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/AquesTalk2.framework/";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4850B7E51E78089F006442D7 /* Build configuration list for PBXProject "AqTK-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4850B7F71E7808A0006442D7 /* Debug */,
+				4850B7F81E7808A0006442D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4850B7F91E7808A0006442D7 /* Build configuration list for PBXNativeTarget "AqTK-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4850B7FA1E7808A0006442D7 /* Debug */,
+				4850B7FB1E7808A0006442D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4850B7E21E78089F006442D7 /* Project object */;
+}

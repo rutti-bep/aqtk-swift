@@ -1,0 +1,28 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/KS/Desktop/AqTK-Swift/Build/Debug/AqTK-Swift.app/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AqTK_Swift-Swift.h",
+          'external-contents': "/Users/KS/Desktop/AqTK-Swift/Build/Debug/AqTK-Swift.app/Contents/Headers/AqTK_Swift-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/KS/Desktop/AqTK-Swift/Build/Debug/AqTK-Swift.app/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/KS/Desktop/AqTK-Swift/Build/AqTK-Swift.build/Debug/AqTK-Swift.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

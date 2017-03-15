@@ -1,0 +1,7 @@
+framework module AquesTalk2 {
+  umbrella header "AquesTalk2.h"
+
+  export *
+  module * { export * }
+}
+
