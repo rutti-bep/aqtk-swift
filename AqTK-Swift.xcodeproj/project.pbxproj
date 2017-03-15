@@ -15,6 +15,7 @@
 		48EA48951E781D5100699C47 /* AquesTalk2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48941E781D5100699C47 /* AquesTalk2.framework */; };
 		48EA48961E781D5100699C47 /* AquesTalk2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48941E781D5100699C47 /* AquesTalk2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48EA48991E78288600699C47 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EA48981E78288600699C47 /* AVFoundation.framework */; };
+		594775EE1E7940BC00A62327 /* UIClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594775ED1E7940BC00A62327 /* UIClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		48EA48941E781D5100699C47 /* AquesTalk2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AquesTalk2.framework; sourceTree = "<group>"; };
 		48EA48971E781FB500699C47 /* AqTK-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AqTK-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		48EA48981E78288600699C47 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		594775ED1E7940BC00A62327 /* UIClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				4850B7ED1E7808A0006442D7 /* AppDelegate.swift */,
 				4850B7EF1E7808A0006442D7 /* ViewController.swift */,
+				594775ED1E7940BC00A62327 /* UIClass.swift */,
 				4850B7F11E7808A0006442D7 /* Assets.xcassets */,
 				4850B7F31E7808A0006442D7 /* Main.storyboard */,
 				4850B7F61E7808A0006442D7 /* Info.plist */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4850B7F01E7808A0006442D7 /* ViewController.swift in Sources */,
+				594775EE1E7940BC00A62327 /* UIClass.swift in Sources */,
 				4850B7EE1E7808A0006442D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

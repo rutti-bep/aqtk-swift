@@ -17,12 +17,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var window = NSWindow()
     
+    let sayButton = SuperButton()
+    let InputField = NSTextField()
+    
     // エンジンの生成
     let audioEngine = AVAudioEngine()
     // Playerノードの生成
     let player = AVAudioPlayerNode()
+    
+    
 
-    func say(string:NSString){
+    func say(){
+        let string =  InputField.stringValue as NSString
+        
         var size = Int32();
         let wav = AquesTalk2_Synthe_Utf8(string.utf8String, 100, &size, nil)
         if ( wav == nil ) {
@@ -58,23 +65,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             let encodedpath = fullpath.addingPercentEncoding(withAllowedCharacters: .controlCharacters)
             let filepath = URL(string: encodedpath!)
+            print(filepath ?? "nil")
             
             // オーディオファイルの取得
             let audioFile = try AVAudioFile(forReading: filepath!)
-            
-            let AudioFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 8000, channels: 1, interleaved: false)
-
+         
             print(audioFile)
             
-            // エンジンにノードをアタッチ
-            audioEngine.attach(player)
-            // メインミキサの取得
-            let mixer = audioEngine.mainMixerNode
-            // Playerノードとメインミキサーを接続
-            audioEngine.connect(player,
-                                to: mixer,
-                                format: AudioFormat)
-            // プレイヤのスケジュール
+           // プレイヤのスケジュール
             player.scheduleFile(audioFile, at: nil) {
                 print("complete")
             }
@@ -100,9 +98,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // エンジンにノードをアタッチ
+        audioEngine.attach(player)
+        // メインミキサの取得
+        let mixer = audioEngine.mainMixerNode
+        
+        let AudioFormat = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: 8000, channels: 1, interleaved: false)
+
+        // Playerノードとメインミキサーを接続
+        audioEngine.connect(player,
+                            to: mixer,
+                            format: AudioFormat)
+        
+        
+        let size = NSSize(width: 500, height: 400)
+        let point = NSPoint(x: 0, y: 0)
+        window.setFrameOrigin(point)
+        window.setContentSize(size)
+        window.makeKeyAndOrderFront(nil)
+        
+        sayButton.create(title:"say" ,x: 400, y: 350, width: 80, height: 20,action: #selector(AppDelegate.say))
+        sayButton.backgroundColor = NSColor.blue
+        window.contentView?.addSubview(sayButton)
+        
+        InputField.frame = NSRect(x: 10, y: 350,width : 300,height: 20)
+        InputField.stringValue = "てすと"
+        window.contentView?.addSubview(InputField)
         
 //        say(string: "うーん")
-        say(string: "わーい")
+//        say(string: "わーい")
         // Insert code here to initialize your application
     }
 
